@@ -1,4 +1,5 @@
 from django.conf.urls import *
-from blog.views import archive
+from blog.views import archive, hello
 
-urlpatterns = [url(r'^$', archive),]
+urlpatterns = [url(r'^start', archive),
+               url(r'^hello/', hello), ]
